@@ -36,7 +36,7 @@ const playerData = [
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
-
+// wow
 function displayPlayer() {
   // clear the DOM
     playerEl.textContent = '';
