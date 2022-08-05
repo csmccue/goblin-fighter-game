@@ -67,9 +67,8 @@ function displayPlayer() {
 function displayGoblins() {
     goblinsEl.textContent = '';
     for (let player of playerData) {
-        const newPlayerEl = renderPlayer(player);
-        playerEl.append(newPlayerEl);
-
+        //const newPlayerEl = renderPlayer(player);
+        //playerEl.append(newPlayerEl);
         for (let goblin of goblinData) {
             const newGoblinEl = renderGoblin(goblin);
             if (goblin.hitpoints > 0 && player.hitpoints > 0){        
@@ -81,8 +80,9 @@ function displayGoblins() {
                     }
                     if (Math.random() > 0.1) {
                         player.hitpoints--;
+                        alert(goblin.name + ' counterattacked and you lost 1 hp!');
                         if (player.hitpoints === 0) {
-                            alert('You died!');
+                            alert('You died! Game over.');
                         }
                     } else {
                         goblinsDefeated++;
