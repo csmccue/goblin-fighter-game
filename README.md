@@ -24,3 +24,13 @@ Additional considerations:
   - What needs to live in a persistence layer?
 - Is there some state we need to initialize?
 - Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+
+## Goblin Fighter Game ##
+//## HTML top (input for new goblin)
+//## HTML left (player) right (goblins)
+//## Create array of Goblin states
+## Create states for user player
+## Display fighters function (display everything)
+## Fight function (randomly decide if goblin or player loses health)
+## If player/goblin health = 0, add class (dead)
+## Button (name) -> on click -> create goblin with name and set health
