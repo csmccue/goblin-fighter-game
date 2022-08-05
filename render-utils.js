@@ -10,6 +10,7 @@ export function renderPlayer(player) {
 
     nameEl.textContent = player.name;
     hitpointsEl.textContent = player.hitpoints;
+    console.log(player.hitpoints);
 
     if (player.hitpoints > 0) {
         emojiEl.textContent = '🧍';
